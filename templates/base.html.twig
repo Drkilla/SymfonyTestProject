@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title> {% block title %}Titre par defaut{% endblock %}</title>
+</head>
 
-        {% block javascripts %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
-</html>
+<body>
+<div class="content">
+    {% block content %}
+    
+    
+    {% endblock %}
+
+</div>
+
+</body>
